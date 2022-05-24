@@ -10,6 +10,7 @@ import java.util.List;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.hasItem;
+import static org.hamcrest.Matchers.is;
 
 @DisplayName("Writing assertions for lists")
 public class AppTest {
@@ -41,6 +42,16 @@ public class AppTest {
                     list,
                     hasItem(first)
             );
+        }
+    }
+    @Nested
+    @DisplayName("When boolean is true")
+    class WhenBooleanIsTrue {
+
+        @Test
+        @DisplayName("Should be true")
+        void shouldBeTrue() {
+            assertThat(true, is(true));
         }
     }
 }
