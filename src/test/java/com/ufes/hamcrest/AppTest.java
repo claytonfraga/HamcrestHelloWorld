@@ -17,7 +17,7 @@ public class AppTest {
 
     @Nested
     @DisplayName("When we write assertions for elements")
-    public class WhenWeWriteAssertionsForElements {
+     class WhenWeWriteAssertionsForElements {
 
         private Object first;
         private Object second;
@@ -34,7 +34,7 @@ public class AppTest {
 
         @Test
         @DisplayName("Should contain a correct element")
-        public void shouldContainCorrectElementWithCustomErrorMessage() {
+         void shouldContainCorrectElementWithCustomErrorMessage() {
             assertThat(String.format(
                     "The list doesn't contain the expected object: %s",
                     first
